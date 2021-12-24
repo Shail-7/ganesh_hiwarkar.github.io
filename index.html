@@ -31,24 +31,53 @@
   <!-- Template Main CSS File -->
   <link href="assets/css/style.css" rel="stylesheet">
 
- 
+  <style>
+    @font-face {
+      font-family: exclusive;
+      src: url('assets/fonts/GROBOLD.ttf');
+    }
+
+    .logo {
+      font-family: exclusive;
+    }
+
+    .crd {
+      min-height: 600px;
+      color: white;
+      border: none;
+      background-image: url(assets/img/cool-background\ \(5\).png);
+      font-family: "Open Sans", sans-serif
+    }
+
+    .crdimg {
+      max-height: 500px;
+    }
+
+    .crdbody {
+      max-height: 100px;
+    }
+  </style>
+
 </head>
 
-<body>
+<body style="background-image:url('assets/img/cool-background\ \(5\).png');color: white;">
+
+  
 
   <!-- ======= Header ======= -->
-  <header id="header" class="fixed-top ">
+  <header id="header" class="fixed-top" style="background-image: url('assets/img/trianglify-lowres.png');">
     <div class="container d-flex align-items-center justify-content-between">
       <h1 class="logo"><a href="index.html">Ganesh Dance World</a></h1>
       <!-- Uncomment below if you prefer to use an image logo -->
       <!-- <a href="index.html" class="logo"><img src="assets/img/logo.png" alt="" class="img-fluid"></a>-->
 
       <nav id="navbar" class="navbar">
-        <ul>
-          <li><a class="nav-link scrollto active" href="#hero">Home</a></li>
+        <ul style="background-image: url('assets/img/trianglify-lowres.png');">
+          <li><a class="nav-link scrollto active" href="#hero1">Home</a></li>
+          <li><a class="nav-link scrollto" href="#dance">Dance</a></li>
           <li><a class="nav-link scrollto" href="#about">About</a></li>
           <li><a class="nav-link scrollto" href="#testimonials">Testimonials</a></li>
-          <li><a class="nav-link scrollto " href="#portfolio">Portfolio</a></li>
+          <li><a class="nav-link scrollto " href="#portfolio">With Stars</a></li>
           <!-- <li><a class="nav-link scrollto" href="#team">Team</a></li> -->
           <!-- <li class="dropdown"><a href="#"><span>Drop Down</span> <i class="bi bi-chevron-down"></i></a>
             <ul>
@@ -77,47 +106,261 @@
   </header><!-- End Header -->
 
   <!-- ======= Hero Section ======= -->
-  <section id="hero" class="d-flex align-items-center">
+
+  <section id="hero1" class="d-flex align-items-center">
 
     <div class="container-fluid" data-aos="fade-up">
+      <div class="pt-4 mt-5 pt-lg-0 order-2 order-lg-1 content" data-aos="fade-right">
+        <h3 class="text-center" style="color: #2C4964;">What stars have to say about Ganesh?</h3>
+      </div>
       <div class="row justify-content-center">
-        <div class="col-xl-5 col-lg-6 pt-3 pt-lg-0 order-2 order-lg-1 d-flex flex-column justify-content-center">
-          <h1>Ganesh Hiwarkar Dance Commpany</h1>
-          <h2>Welcome to the Ganesh's World of Dance</h2>
+        <div class="col-xl-12 col-lg-12 pt-3 pt-lg-0 order-2 order-lg-1 d-flex flex-column justify-content-center">
+          <!-- <h1>Ganesh Hiwarkar Dance Commpany</h1>
+          <h2>Welcome to the Ganesh's World of Dance</h2> -->
+
+          <!-- <video class="" width="500" style="min-width:100%;min-height:100%" controls>
+            <source src="https://www.youtube.com/embed/tgbNymZ7vqY?playlist=tgbNymZ7vqY" type="video/mp4">
+            Your browser does not support HTML video.
+          </video> -->
+
+          <iframe class="" height="500" style="min-width:100%;min-height:100%"
+            src="https://www.youtube.com/embed/zHxtUYgpk8g?playlist=zHxtUYgpk8g,bH5Joi9sSug&autoplay=1&mute=1">
+          </iframe>
+          <!-- <iframe width="640" height="360" src="https://www.youtube.com/embed/ZegpdGhmBRw" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe> -->
+
+
+
           <!-- <div><a href="#about" class="btn-get-started scrollto">Get Started</a></div> -->
         </div>
-        <div class="col-xl-4 col-lg-6 order-1 order-lg-2 hero-img" data-aos="zoom-in" data-aos-delay="150">
+        <!-- <div class="col-xl-4 col-lg-6 order-1 order-lg-2 hero-img" data-aos="zoom-in" data-aos-delay="150">
           <img src="assets/img/herosectionimg.png" style="height: 600px;" class="img-fluid animated" alt="image">
-        </div>
+        </div> -->
       </div>
     </div>
 
-  </section><!-- End Hero -->
+  </section>
+  <!-- End Hero -->
 
   <main id="main">
+
+    <!--======== Dance Section ========-->
+    <section id="dance" class="dance">
+      <div class="container">
+        <div class="section-title">
+          <h2>Dance</h2>
+        </div>
+        <div class="pt-4 pt-lg-0 order-2 order-lg-1 content text-center" data-aos="fade-right">
+
+          <h3 class="pb-4" style="color: #2C4964;">Dance Courses/Workshops </h3>
+        </div>
+
+        <!-- Card deck -->
+        <div class="card-deck row">
+
+          <div class="col-xs-12 col-sm-6 col-md-4">
+            <!-- Card -->
+            <div class="card mb-3 pb-3 crd">
+
+              <!--Card image-->
+              <div class="view crdimg">
+                <img class="card-img-top img-fluid" src="assets/img/dance/dancecourse1.jpg" alt="Card image cap"
+                  style="max-height: 500px;">
+                <a href="#!">
+                  <div class="mask rgba-white-slight"></div>
+                </a>
+              </div>
+
+              <!--Card content-->
+              <div class="card-body crdbody">
+
+                <!--Title-->
+                <h4 class="card-title">Online Dance Workshop</h4>
+                <!--Text-->
+                <!-- <p class="card-text">Some quick example text to build on the card title and make up the bulk of the
+                  card's content.</p> -->
+                <!-- Provides extra visual weight and identifies the primary action in a set of buttons -->
+                <!-- <button type="button" class="btn btn-light-blue btn-md">Read more</button> -->
+
+              </div>
+
+            </div>
+            <!-- Card -->
+          </div>
+
+          <div class="col-xs-12 col-sm-6 col-md-4">
+            <!-- Card -->
+            <div class="card mb-4 crd">
+
+              <!--Card image-->
+              <div class="view overlay">
+                <img class="card-img-top crdimg" src="assets/img/dance/dancecourse2.jpg" alt="Card image cap">
+                <a href="#!">
+                  <div class="mask rgba-white-slight"></div>
+                </a>
+              </div>
+
+              <!--Card content-->
+              <div class="card-body crdbody">
+
+                <!--Title-->
+                <h4 class="card-title">Dance Workshop only for Actors</h4>
+                <!--Text-->
+                <!-- <p class="card-text">Some quick example text to build on the card title and make up the bulk of the
+                  card's content.</p> -->
+                <!-- Provides extra visual weight and identifies the primary action in a set of buttons -->
+                <!-- <button type="button" class="btn btn-light-blue btn-md">Read more</button> -->
+
+              </div>
+
+            </div>
+            <!-- Card -->
+          </div>
+
+          <div class="col-xs-12 col-sm-6 col-md-4">
+            <!-- Card -->
+            <div class="card mb-4 crd">
+
+              <!--Card image-->
+              <div class="view overlay">
+                <img class="card-img-top crdimg" src="assets/img/dance/dancecourse3.jpg" alt="Card image cap">
+                <a href="#!">
+                  <div class="mask rgba-white-slight"></div>
+                </a>
+              </div>
+
+              <!--Card content-->
+              <div class="card-body crdbody">
+
+                <!--Title-->
+                <h4 class="card-title">Dance Workshop for Fitness</h4>
+                <!--Text-->
+                <!-- <p class="card-text">Some quick example text to build on the card title and make up the bulk of the
+                  card's content.</p> -->
+                <!-- Provides extra visual weight and identifies the primary action in a set of buttons -->
+                <!-- <button type="button" class="btn btn-light-blue btn-md">Read more</button> -->
+
+              </div>
+
+            </div>
+            <!-- Card -->
+          </div>
+
+          <div class="col-xs-12 col-sm-6 col-md-4">
+            <!-- Card -->
+            <div class="card mb-4 crd">
+
+              <!--Card image-->
+              <div class="view overlay crdimg">
+                <img class="card-img-top" src="assets/img/dance/dancecourse4.jpg" alt="Card image cap">
+                <a href="#!">
+                  <div class="mask rgba-white-slight"></div>
+                </a>
+              </div>
+
+              <!--Card content-->
+              <div class="card-body crdbody">
+
+                <!--Title-->
+                <h4 class="card-title">Dance for Professionals</h4>
+                <!--Text-->
+                <!-- <p class="card-text">Some quick example text to build on the card title and make up the bulk of the
+                  card's content.</p> -->
+                <!-- Provides extra visual weight and identifies the primary action in a set of buttons -->
+                <!-- <button type="button" class="btn btn-light-blue btn-md">Read more</button> -->
+
+              </div>
+
+            </div>
+            <!-- Card -->
+          </div>
+
+
+
+
+
+
+        </div>
+        <!-- Card deck -->
+
+
+
+        <div class="pt-4 pt-lg-0 order-2 order-lg-1 content text-center" data-aos="fade-right">
+
+          <h3 class="pb-4" style="color: #2C4964;">Some Glimpse from the Dance Shows</h3>
+        </div>
+
+        <!--Grid row-->
+        <div class="row">
+
+          <!--Grid column-->
+          <div class="col-lg-6 col-md-12 mb-4">
+
+            <img src="assets/img/dance/danceimg3.jpg" class="img-fluid mb-4" alt="">
+
+            <img src="assets/img/dance/danceimg4.jpg" class="img-fluid mb-4" alt="" data-wow-delay="0.3s">
+
+          </div>
+          <!--Grid column-->
+
+          <!--Grid column-->
+          <div class="col-lg-6 col-md-6 mb-4">
+
+            <img src="assets/img/dance/danceimg1.jpg" class="img-fluid mb-4" alt="" data-wow-delay="0.1s">
+
+            <img src="assets/img/dance/danceimg2.jpg" class="img-fluid mb-4" alt="" data-wow-delay="0.4s">
+
+          </div>
+
+
+        </div>
+        <!--Grid column-->
+
+      </div>
+      <!--Grid row-->
+
+      </div>
+
+      <div class="pt-4 pt-lg-0 order-2 order-lg-1 content text-center" data-aos="fade-right">
+        <h3 class="pt-4 pb-4" style="color: #2C4964;">Some Glimpse from the Dance Classes</h3>
+      </div>
+
+      <div class="row justify-content-center">
+        <div class="col-xl-12 col-lg-12 pt-3 pt-lg-0 order-2 order-lg-1 d-flex flex-column justify-content-center">
+
+          <iframe class="" height="500" style="min-width:100%;min-height:100%"
+            src="https://www.youtube.com/embed/ZegpdGhmBRw?playlist=ZegpdGhmBRw&autoplay=1&mute=1">
+          </iframe>
+        </div>
+      </div>
+
+
+
+
+    </section>
 
     <!-- ======= About Section ======= -->
     <section id="about" class="about">
       <div class="container">
 
+
         <div class="container text-center">
-         
+          <div class="section-title">
+            <h2>About</h2>
+          </div>
+
           <div class="pt-4 pt-lg-0 order-2 order-lg-1 content" data-aos="fade-right">
-            <h3>What stars have to say about Ganesh?</h3>
             <p class="fst-italic">
               Ganesh Hiwarkar has worked in many shows,choreographed many Film Actors.
             </p>
-           
+
             <!-- <a href="#" class="read-more">Read More <i class="bi bi-long-arrow-right"></i></a> -->
           </div>
-          <div class="order-1 order-lg-2 my-3" data-aos="zoom-in" data-aos-delay="150">
-            <div class="row"> 
-            <video class="col-md-12 col-lg-12 col-sm-12" width="500" controls>
+          <!-- <div class="order-1 order-lg-2 my-3" data-aos="zoom-in" data-aos-delay="150">
+            <video width="500" style="min-width:100%;min-height:100%" controls>
               <source src="assets/video/AboutMe.mp4" type="video/mp4">
               Your browser does not support HTML video.
             </video>
-            </div>
-          </div>
+          </div> -->
         </div>
         <div class="container">
 
@@ -125,11 +368,15 @@
 
           <ul style="list-style: none;">
             <li><i class="bi bi-star-fill star"></i> Ganesh Hiwarkar started dancing since 2002.</li>
-            <li><i class="bi bi-star-fill star"></i> Ganesh Hiwarkar got Highlighted in his college for dancing on the song <strong>Mera naam Joker</strong>.</li>
-            <li><i class="bi bi-star-fill star"></i> Ganesh Hiwarkar also performed on the song <strong>Main Deewana Hoon</strong> by Ganesh Hegde in the dance show <strong>Boogie Woogie</strong> of Sony Tv.</li>
-            <li><i class="bi bi-star-fill star"></i> Ganesh Hiwarkar got Highlighted by the Midday in the show Miss Mumbai.</li>
+            <li><i class="bi bi-star-fill star"></i> Ganesh Hiwarkar got Highlighted in his college for dancing on the
+              song <strong>Mera naam Joker</strong>.</li>
+            <li><i class="bi bi-star-fill star"></i> Ganesh Hiwarkar also performed on the song <strong>Main Deewana
+                Hoon</strong> by Ganesh Hegde in the dance show <strong>Boogie Woogie</strong> of Sony Tv.</li>
+            <li><i class="bi bi-star-fill star"></i> Ganesh Hiwarkar got Highlighted by the Midday in the show Miss
+              Mumbai.</li>
             <li><i class="bi bi-star-fill star"></i> Ganesh Hiwarkar established the dance academy in 2006.</li>
-            <li><i class="bi bi-star-fill star"></i>Many times he has paid the tribute to <strong>Michael Jackson</strong> through his dance.</li>
+            <li><i class="bi bi-star-fill star"></i>Many times he has paid the tribute to <strong>Michael
+                Jackson</strong> through his dance.</li>
 
           </ul>
         </div>
@@ -292,7 +539,8 @@
     <!-- End Features Section -->
 
     <!-- ======= Testimonials Section ======= -->
-    <section id="testimonials" class="testimonials section-bg">
+    <section id="testimonials" class="testimonials section-bg"
+      style="background-image: url('assets/img/cool-background\ \(5\).png');">
       <div class="container" data-aos="fade-up">
 
         <div class="section-title">
@@ -302,7 +550,7 @@
             in iste officiis commodi quidem hic quas.</p> -->
         </div>
 
-        <div class="testimonials-slider swiper-container" data-aos="fade-up" data-aos-delay="100">
+        <div class="testimonials-slider swiper-container" style="color: black;" data-aos="fade-up" data-aos-delay="100">
           <div class="swiper-wrapper">
 
             <div class="swiper-slide">
@@ -382,7 +630,7 @@
       <div class="container" data-aos="fade-up">
 
         <div class="section-title">
-          <h2>Portfolio</h2>
+          <h2>With Stars</h2>
         </div>
 
 
@@ -422,7 +670,8 @@
     <!-- End Frequently Asked Questions Section -->
 
     <!-- ======= Contact Section ======= -->
-    <section id="contact" class="contact section-bg">
+    <section id="contact" class="contact section-bg"
+      style="background-image: url('assets/img/cool-background\ \(5\).png');">
       <div class="container" data-aos="fade-up">
 
         <div class="section-title">
@@ -463,18 +712,18 @@
 
         <div class="section-title">
           <h2 class="my-5">Social Media</h2>
-          </div>
+        </div>
 
         <div class="row">
 
           <div class="col-lg-3 col-md-6  mx-auto">
             <div class="info-box  mb-4">
               <a href="https://www.instagram.com/ganeshdanceoflife/?hl=en">
-              <img src="https://img.icons8.com/color/48/000000/instagram-new--v2.png" />
-              <!-- <i class="bx bx-envelope"></i> -->
-              <h3>Instagram</h3>
-              <p>ganeshdanceoflife</p>
-            </a>
+                <img src="https://img.icons8.com/color/48/000000/instagram-new--v2.png" />
+                <!-- <i class="bx bx-envelope"></i> -->
+                <h3>Instagram</h3>
+                <p>ganeshdanceoflife</p>
+              </a>
             </div>
           </div>
           <div class="col-lg-3 col-md-6  mx-auto">
@@ -522,7 +771,7 @@
   </main><!-- End #main -->
 
   <!-- ======= Footer ======= -->
-  <footer id="footer">
+  <footer id="footer" style="background-image: url('assets/img/trianglify-lowres.png');">
 
     <div class="footer-top">
       <div class="container">
@@ -539,9 +788,9 @@
             </p>
           </div>
 
-         
 
-         
+
+
 
         </div>
       </div>
@@ -551,7 +800,7 @@
 
       <div class="copyright-wrap d-md-flex py-4">
         <div class="me-md-auto text-center text-md-start">
-       
+
           <div class="credits">
             <!-- All the links in the footer should remain intact. -->
             <!-- You can delete the links only if you purchased the pro version. -->
@@ -561,9 +810,12 @@
           </div>
         </div>
         <div class="social-links text-center text-md-right pt-3 pt-md-0">
-          <a href="https://twitter.com/GHiwarkar?ref_src=twsrc%5Egoogle%7Ctwcamp%5Eserp%7Ctwgr%5Eauthor" class="twitter"><i class="bx bxl-twitter"></i></a>
-          <a href="https://www.facebook.com/pages/category/Dance-School/Ganesh-Hiwarkar-Dance-Company-101199752013393/" class="facebook"><i class="bx bxl-facebook"></i></a>
-          <a href="https://www.instagram.com/ganeshdanceoflife/?hl=en" class="instagram"><i class="bx bxl-instagram"></i></a>
+          <a href="https://twitter.com/GHiwarkar?ref_src=twsrc%5Egoogle%7Ctwcamp%5Eserp%7Ctwgr%5Eauthor"
+            class="twitter"><i class="bx bxl-twitter"></i></a>
+          <a href="https://www.facebook.com/pages/category/Dance-School/Ganesh-Hiwarkar-Dance-Company-101199752013393/"
+            class="facebook"><i class="bx bxl-facebook"></i></a>
+          <a href="https://www.instagram.com/ganeshdanceoflife/?hl=en" class="instagram"><i
+              class="bx bxl-instagram"></i></a>
         </div>
       </div>
 
